@@ -1,14 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
     return (
-        <div className="sticky top 0 flex justify-between top-10 pt-5 pl-3 pb-3 border-b 2 w-full mb-10">
-            <div className="logo">Paradise Nursery</div>
+        <div className="sticky top 0 flex justify-between pl-3 pb-10 border-b 2 w-full mb-10 bg-green-700 ">
+            <div className="text-3xl text-white text-center pt-4">Paradise Nursery</div>
             <div className="">
-                <ul >
-                    <li className="float-left pr-5">one</li>
-                    <li className="float-left pr-5" >two</li>
-                    <li className="float-left pr-5">three</li>
-                </ul>
+            <FontAwesomeIcon icon={faShoppingCart} className="text-white text-2xl pt-5 pr-5" />
             </div>
         </div>
     )
